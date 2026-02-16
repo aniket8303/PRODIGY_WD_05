@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Weather App</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-card">
+        <h1 class="app-title">Weather App</h1>
+
+        <div class="search-box">
+          <input type="text" id="cityInput" placeholder="Enter city..." />
+          <button id="searchBtn">Search</button>
+        </div>
+
+        <button id="locationBtn" class="location-btn">
+          Use Current Location
+        </button>
+
+        <div id="loading" class="loading hidden">Loading...</div>
+
+        <div id="weatherInfo" class="weather-info hidden">
+          <h2 id="cityName"></h2>
+
+          <img id="weatherIcon" src="" alt="icon" />
+
+          <h1 id="temperature"></h1>
+
+          <p id="condition"></p>
+
+          <div class="details">
+            <div>
+              Humidity
+              <span id="humidity"></span>
+            </div>
+
+            <div>
+              Wind
+              <span id="wind"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
